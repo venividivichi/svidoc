@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"; >
+    <meta charset="UTF-8">
     <title>Перевірка свідоцтва</title>
     <link rel="stylesheet" href="css/main.css" type="text/css"/>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
     <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-    <script type="text/javascript">
+   <!-- <script type="text/javascript">
         $(function(){
             $('.select').on('click', function(){
                 $(this).next('.gohide').slideToggle();
             });
         });
+    </script>-->
+
+    <script type="text/javascript">
+
+        function openbox(id){
+
+            display = document.getElementById(id).style.display;
+            if(display=='none'){
+                document.getElementById(id).style.display='block';
+            }else{
+                document.getElementById(id).style.display='none';
+            }
+        }
     </script>
+
 
 </head>
 <body>
@@ -31,10 +45,19 @@
         <!--<a class="button-text" href="#">ПЕРЕВІРИТИ</a>-->
     </div>
     <div class="help">Тепер натисніть кнопку Перевірити</div>
-    <div class="see-num select" style="cursor: pointer;">Де подивитись номер свідоцтва?</div>
+
+    <!--<div class="see-num select" style="cursor: pointer;">Де подивитись номер свідоцтва?</div>
     <div class="gohide" style="display: none;">
         <img src="img/svid_expp.png" alt="свідоцтво">
+    </div>-->
+
+   <div class="see-num select" onclick="openbox('box'); return false" style="cursor: pointer;">Де подивитись номер свідоцтва?
+        <div id="box" style="display: none;">
+            <img src="img/svid_expp.png" alt="свідоцтво">
+        </div>
     </div>
+
+
     <div class="bot-img">
         <img src="img/pic1.jpg" alt="чувак">
     </div>
