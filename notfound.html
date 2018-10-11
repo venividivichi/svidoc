@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Перевірка свідоцтва</title>
+    <link rel="stylesheet" href="css/mainf.css" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- <script type="text/javascript">
+         $(function(){
+             $('.select').on('click', function(){
+                 $(this).next('.gohide').slideToggle();
+             });
+         });
+     </script>-->
+
+    <script type="text/javascript">
+
+        function openbox(id){
+
+            display = document.getElementById(id).style.display;
+            if(display=='none'){
+                document.getElementById(id).style.display='block';
+            }else{
+                document.getElementById(id).style.display='none';
+            }
+        }
+    </script>
+
+
+</head>
+<body>
+<div class="container">
+    <div class="title-start">
+        Номер не знайдено
+    </div>
+
+    <div class="flex-container">
+    <div class="row">
+        <div class="title-second">
+            Якщо інформацію не знайдено, радимо отримати витяг<br>
+            з Єдиного державного реєстру МВС – на сайті hsc.gov.ua<br>
+            або звернутися за послугою до зручного територіального<br>
+            сервісного центру МВС.
+        </div>
+    </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="row">
+            <div class="merg-text">
+                <div class="bot-img">
+                    <img src="img/pic1.jpg" alt="чувак">
+                </div>
+                <div class="bot-text">
+                    (044) 290-19-88
+                    <div class="bot-text2">
+                        пн-чт: 9:00-18:00, пт: 9:00-16:45<br>
+                        Вартість дзвінків згідно тарифів
+                        вашого оператора
+                    </div>
+                </div>
+                <!--<div class="bot-text2">
+                    пн-чт: 9:00-18:00, пт: 9:00-16:45<br>
+                    Вартість дзвінків згідно тарифів вашого оператора
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="row">
+            <div class="title-third">
+                *  Звертаємо Вашу увагу, що цей сервіс містить  інформацію з 2013 року<br>
+                та працює у тестовому режимі.
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
