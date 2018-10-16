@@ -9,10 +9,16 @@ btn.addEventListener("click", function() {
 
     myRequest.open('GET', 'http://10.30.1.208:8080/nais-exchange/resources/cars/v1/cert/' + vvod);
     myRequest.onload = function() {
-        var myData = JSON.parse(myRequest.responseText);
-        console.log(myData[5]);
-        renderHTML(myData);
-        /*console.log(myData[0]);*/
+
+        if (myRequest.status != 200) {
+            alert(myRequest.status + ': ' + myRequest.statusText);
+            document.location.href='notfound.html';
+        } else {
+            var myData = JSON.parse(myRequest.responseText);
+            console.log(myData[5]);
+            renderHTML(myData);
+            /*console.log(myData[0]);*/
+        }
     };
     myRequest.send();
 
