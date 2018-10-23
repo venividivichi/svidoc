@@ -1,4 +1,10 @@
 
+.image_war {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 47px;
+}
 .title-start {
     height: 37px;
     /*width: 652px;*/
@@ -8,7 +14,7 @@
     font-weight: bold;
     line-height: 37px;
     margin-bottom: 59px;
-    margin-top: 112px;
+    margin-top: 16px;
     text-align: center;
 }
 
@@ -22,6 +28,10 @@
     /*text-align: center;*/
 }
 
+.title-second p {
+    display: inline;
+}
+
 .title-third {
     height: 38px;
     /*width: 548px;*/
@@ -31,6 +41,7 @@
     line-height: 19px;
     /*text-align: center;*/
     margin-top: 48px;
+    margin-bottom: 112px;
 }
 
 /*.input-num {
