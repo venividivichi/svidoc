@@ -36,6 +36,7 @@ function renderHTML(data) {
             htmlString += renderDiv(propertyName, data[i][propertyName])
         }
 
+
         // htmlString += "<p>" + "Дата народження: " + data[i].birthday  + "<br>"
         //                     + "Тип кузова: " + data[i].body + "<br>"
         // 					+ "Марка-модель: " + data[i].brand + "<br>"
