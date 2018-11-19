@@ -8,7 +8,7 @@
     font-weight: bold;
     line-height: 37px;
     margin-bottom: 55px;
-    margin-top: 89px;
+    margin-top: 29px;
     text-align: center;
 }
 
@@ -21,20 +21,57 @@
     !*outline: none;*!
 }*/
 
+.input-num {
+    display: flex;
+}
+
+input[type=text], input[type=submit], textarea{
+    -webkit-appearance: none;
+}
+
 .input {
     height: 66px;
     width: 270px;
-    border: 2px solid #7ED321;
+    border: 2px solid #4ebb73;
     border-radius: 10px;
     /*float: left;*/
     outline: none;
+    text-transform: uppercase;
+
 }
 
+::-webkit-input-placeholder { /* WebKit browsers */
+    text-transform: none;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    text-transform: none;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    text-transform: none;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    text-transform: none;
+}
+::placeholder { /* Recent browsers */
+    text-transform: none;
+}
+
+
+/* .input:invalid {
+  border: 2px dashed red;
+}
+
+.input:valid {
+  border: 2px solid #4ebb73;
+} */
+
 .button {
+    -webkit-appearance: none;
     height: 66px;
-    width: 199px;
+    /* line-height: normal; */
+    width: 212px;
     border-radius: 10px;
-    background-color: #7ED321;
+    background-color: #4ebb73;
     /*float: left;*/
     margin-left: 20px;
 
@@ -42,19 +79,26 @@
     font-family: Montserrat;
     font-size: 18px;
     font-weight: bold;
-    letter-spacing: 1.13px;
-    line-height: 22px;
+    /* letter-spacing: 1.13px; */
+    /* line-height: 22px; */
 }
 
+/* .button:hover {
+    background-color: #7ed321;
+} */
+
 /*#startBtn:active {*/
-    /*box-shadow: 0 3px 0 #00823F;*/
-    /*top: 3px;*/
+/*box-shadow: 0 3px 0 #00823F;*/
+/*top: 3px;*/
 /*}*/
 
-.button,
-.button:active,
+/* .button,
+.button:active, */
 .button:focus {
     outline: none;
+}
+.button:active {
+    background-color: #3b9f5d;
 }
 
 ::-webkit-input-placeholder {
@@ -64,7 +108,7 @@
 .help {
     height: 21px;
     /*width: 810px;*/
-    color: #64A918;
+    color: #4ebb73;
     font-family: Montserrat;
     font-size: 13px;
     line-height: 21px;
@@ -82,12 +126,12 @@
     line-height: 21px;
     margin-top: 39px;
     text-align: center;
-    padding-bottom: 43.3%;
+    padding-bottom: 23.9%;
 }
 
 .bot-text {
     height: 42px;
-    width: 422px;
+    width: 472px;
     color: #000000;
     font-family: Montserrat;
     font-size: 15px;
@@ -118,16 +162,17 @@
     align-items: center;
     justify-content: center;
 }
-row {
+
+/* .row {
     width: 100%;
-}
+} */
 .flex-item {
 
     padding: 5px;
     width: 120px;
     /*height: 150px;*/
     /*margin: 10px;*/
-    line-height: 150px;
+    /* line-height: 150px; */
     /*color: white;*/
     /*font-weight: bold;*/
     /*font-size: 3em;*/
@@ -138,12 +183,87 @@ row {
 .flex-item2 {
 
     padding: 5px;
-    width: 265px;
+    width: 215px;
     /*height: 150px;*/
     /*margin: 10px;*/
-    line-height: 150px;
+    /*  line-height: 150px; */
     /*color: white;*/
     /*font-weight: bold;*/
     /*font-size: 3em;*/
     text-align: left;
+}
+
+.rowContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container_out {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.title-out {
+    height: 37px;
+    /*width: 652px;*/
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 37px;
+    margin-bottom: 55px;
+    margin-top: 29px;
+    text-align: center;
+
+}
+
+#second {
+    display: none;
+}
+
+
+.firstDiv {
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: bold;
+    width: 50px;
+}
+
+.secondDiv {
+    font-size: 14px;
+    font-family: Montserrat;
+    width: 250px;
+}
+
+.lastDiv {
+    font-size: 18px;
+    font-family: Montserrat;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    width: 200px;
+}
+
+#myForm {
+    display: flex;
+}
+
+@media (max-width: 900px) {
+
+    .see-num {
+        height: 21px;
+        /*width: 228px;*/
+        color: #000000;
+        font-family: Montserrat;
+        font-size: 13px;
+        line-height: 21px;
+        margin-top: 39px;
+        text-align: center;
+        padding-bottom: 300px;
+    }
+
+
 }
